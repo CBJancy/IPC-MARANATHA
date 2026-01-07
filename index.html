@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IPC-MARANATHA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>IPC-MARANATHA</h1>
+    <p>Welcome to Our Church App</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#prayer">Prayer Request</a>
+  </nav>
+
+  <section id="home">
+    <h2>🙏 Verse of the Day</h2>
+    <p>“Call to me and I will answer you.” – Jeremiah 33:3</p>
+  </section>
+
+  <section id="prayer">
+    <h2>🕊 Online Prayer Request</h2>
+
+    <!-- EMBED GOOGLE FORM HERE -->
+    <iframe 
+      src="PASTE_GOOGLE_FORM_EMBED_LINK_HERE"
+      width="100%" 
+      height="600" 
+      frameborder="0">
+    </iframe>
+  </section>
+
+  <footer>
+    <p>© 2026 IPC-MARANATHA</p>
+  </footer>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+  }
+</script>
+</body>
+</html>
